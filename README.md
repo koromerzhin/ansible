@@ -20,6 +20,8 @@
 
 Software:
 
+- ansible
+- python
 - make
 - npm
 

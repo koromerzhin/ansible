@@ -8,8 +8,15 @@ help:
 package-lock.json: package.json
 	npm install
 
+
 node_modules: package-lock.json
 	npm install
+
+ansible-localhost:
+	ansible-playbook localhost.yml
+
+ansible-servers:
+	ansible-playbook servers.yml
 
 install: node_modules ## Installation application
 
