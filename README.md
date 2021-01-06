@@ -12,7 +12,7 @@
 
 ![Continuous Integration](https://github.com/koromerzhin/ansible/workflows/Continuous%20Integration/badge.svg?branch=develop)
 
-> v
+> Script d'installation pour mes machines
 
 ## 🏠 [Homepage](https://github.com/koromerzhin/ansible#readme)
 
