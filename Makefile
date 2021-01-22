@@ -52,7 +52,7 @@ ifeq ($(COMMAND_ARGS),commit)
 	@npm run commit
 else ifeq ($(COMMAND_ARGS),check)
 	@make contributors check -i
-	@make linter all -i
+	@make linter readme -i
 	@git status
 else
 	@echo "ARGUMENT missing"
@@ -64,9 +64,7 @@ else
 endif
 
 linter: ## Scripts Linter
-ifeq ($(COMMAND_ARGS),all)
-	@make linter readme -i
-else ifeq ($(COMMAND_ARGS),readme)
+ifeq ($(COMMAND_ARGS),readme)
 	@npm run linter-markdown README.md
 else
 	@echo "ARGUMENT missing"
